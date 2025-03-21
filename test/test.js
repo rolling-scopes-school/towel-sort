@@ -44,21 +44,18 @@ describe(".towelSort, should perfrom 'towelSort'", () => {
     );
   });
 
-  it.optional(
-    'should do towelSort correctrly wit.optionalh nonsquare matrix',
-    () => {
-      const matrix = [
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-      ];
+  it.optional('should do towelSort correctrly with nonsquare matrix', () => {
+    const matrix = [
+      [1, 2, 3, 4],
+      [5, 6, 7, 8],
+      [9, 10, 11, 12],
+    ];
 
-      assert.deepEqual(
-        towelSort(matrix),
-        [1, 2, 3, 4, 8, 7, 6, 5, 9, 10, 11, 12]
-      );
-    }
-  );
+    assert.deepEqual(
+      towelSort(matrix),
+      [1, 2, 3, 4, 8, 7, 6, 5, 9, 10, 11, 12]
+    );
+  });
 
   it.optional('should do towelSort', () => {
     const matrix = [
